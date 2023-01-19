@@ -7,6 +7,6 @@ def render_root() -> str:
 
     template = env.get_template('template.html')
     print(template.filename)
-    page = template.render()    
+    page = template.render()
 
     return page

@@ -8,3 +8,4 @@ app = FastAPI()
 def root():
     content = render_root()
     response = HTMLResponse(content=content, status_code=200)
+    return response

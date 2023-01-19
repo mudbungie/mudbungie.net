@@ -1,0 +1,12 @@
+[Unit]
+Description=Little bitty webserver
+After=network.target
+
+[Service]
+User=mark
+Group=mark
+WorkingDirectory=/home/mark/dev/mudbungie.net
+ExecStart=/home/mark/.cache/pypoetry/virtualenvs/mudbungie-net-5xIFX6TM-py3.11/bin/gunicorn -c /home/mark/dev/mudbungie.net/gunicorn_conf.py
+
+[Install]
+WantedBy=multi-user.target
